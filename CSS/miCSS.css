@@ -498,13 +498,11 @@
 		}
 
 		.avisoypoliticas {
-		  width: 80%; /* Adjust width as needed */
+		  width: 90%; /* Adjust width as needed */
 		  margin: 0 auto; /* Center the aviso legal content */
 		  padding: 20px;
 		  border: 1px solid #ccc;
-		  border-radius: 5px;
 		  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-		  padding: 20px;
 		  background-color: #fff;
 		  border-radius: 10px;
 		  overflow: hidden;
