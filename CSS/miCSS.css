@@ -614,7 +614,7 @@
 		  top: 0;
 		  left: 0;
 		  z-index: 20;
-		  padding-top: 125px; /*este valor baja la foto de la galeria para que no sea tapada con el menu fijo de navegación*/
+		  padding-top: 150px; /*este valor baja la foto de la galeria para que no sea tapada con el menu fijo de navegación*/
 		  box-sizing: border-box;
 		  overflow-y: auto; /* Permitir desplazamiento vertical cuando se está monstrando la imagen grande */
 		}
