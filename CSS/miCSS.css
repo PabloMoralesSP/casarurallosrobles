@@ -22,8 +22,6 @@
         }
 		
 
-
-
 		.section a, .section1 a, .section2 a, .section3 a, .section4 a {
 		  /* Eliminar estilos por defecto de enlaces */
 		  display: inline-block; /* Convertir el enlace en un bloque en línea */
@@ -51,6 +49,10 @@
 			overflow: hidden;
 			min-height: 700px; /* Ajusta la altura según necesites */
 		}
+		
+		
+		
+		
 		.containerDivnormal .section1 {
 		  color: Black; /* Cambiar el color del texto a blanco */
 		  flex-basis: calc((100%) - 10px); /* Ajusta el ancho de cada sección */
@@ -68,7 +70,34 @@
 		  color: Black; /* Cambiar el color del texto a blanco */
 		  flex-basis: calc((100%/4) - 10px); /* Ajusta el ancho de cada sección */
 		}
-
+		.containerDivnormal h1 {
+			font-family: Arial, sans-serif;
+			font-size: 55px;
+			font-weight: 800;
+			color: #18623D; /* Cambia el color del texto a blanco */
+			text-align: left;
+			margin: 20px 0;
+			font-weight: bold; /* Hace el texto más grueso */
+		}
+		.containerDivnormal h2 {
+			font-family: Arial, sans-serif;
+			font-size: 23px;
+			font-weight: 300;
+			color: #208352; /* Cambia el color del texto a blanco */
+			text-align: left;
+			margin: 20px 0;
+			font-weight: bold; /* Hace el texto más grueso */
+		}
+		
+		.containerDivnormal h3 {
+			font-family: Arial, sans-serif;
+			font-size: 18px;
+			font-weight: 300;
+			color: #28A466; /* Cambia el color del texto a blanco */
+			text-align: left;
+			margin: 20px 0;
+			font-weight: bold; /* Hace el texto más grueso */
+		}
 
 		
 		/*clase contenedor para FORMATEAR UN  DIV CON UN FONDO DE FOTO Y VARIAS SECCIONES*/
@@ -286,8 +315,12 @@
 		  justify-content: center; /* Center horizontally */
 		  max-width: 1100px; /* Set the width as before */
 		  margin: auto;
-		  
-		}
+		  border-radius: 10px;
+		  overflow: hidden;
+		  box-sizing: border-box;
+		  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+		 }
+		 
 		form#availabilityForm {
 		  background-color: #fff;
 		  padding: 20px;
