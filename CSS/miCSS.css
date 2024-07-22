@@ -48,7 +48,6 @@
 			flex-wrap: wrap; /* Permite que los elementos se envuelvan en una nueva línea */
 			position: relative;
 			overflow: hidden;
-			min-height: 700px; /* Ajusta la altura según necesites */
 		}
 	
 		.containerDivnormal .section1 {
@@ -573,6 +572,7 @@
 		.text-center {
 		  text-align: center;
 		  margin-bottom: 1em;
+		  color: #208352;
 		}
 
 		.lightbox-gallery {
