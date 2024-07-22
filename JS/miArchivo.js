@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-// ENVIO DEL FORMULARIO DE CONTACTO POR MEDIO DEL SERVICIO Formspree
+// ENVIO DEL FORMULARIO DE CONTACTO POR MEDIO DEL SERVICIO Formspree.
 
 document.addEventListener('DOMContentLoaded', function() {
   var form = document.getElementById("my-form");
