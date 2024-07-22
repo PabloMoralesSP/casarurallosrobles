@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function changeBackground() {
     currentIndex = (currentIndex + 1) % images.length;
-    const backgroundImage = `linear-gradient(180deg,black 0%,rgba(255,255,255,0.62) 75%), ${images[currentIndex]}`;
+    const backgroundImage = `linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), ${images[currentIndex]}`;
     bgDiv.style.backgroundImage = backgroundImage;
   }
 
