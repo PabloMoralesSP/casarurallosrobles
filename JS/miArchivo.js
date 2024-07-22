@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // ENVIO DEL FORMULARIO DE CONTACTO POR MEDIO DEL SERVICIO Formspree
 
-
+document.addEventListener('DOMContentLoaded', function() {
   var form = document.getElementById("my-form");
   
   async function handleSubmit(event) {
@@ -111,12 +111,13 @@ document.addEventListener('DOMContentLoaded', function() {
           if (Object.hasOwn(data, 'errors')) {
             status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
           } else {
-            status.innerHTML = "Oops! Ha habido un problema enviando su formulario"
+            status.innerHTML = "Oops! Ha habido un problema enviando su formulario";
           }
         })
       }
     }).catch(error => {
-      status.innerHTML = "Oops! Ha habido un problema enviando su formulario""
+      status.innerHTML = "Oops! Ha habido un problema enviando su formulario";
     });
   }
-  form.addEventListener("submit", handleSubmit)
+  form.addEventListener("submit", handleSubmit);
+});
