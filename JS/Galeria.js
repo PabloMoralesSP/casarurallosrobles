@@ -1,6 +1,7 @@
 	
 
 // CODIGO PARA LA GALERIA
+//SACA LAS IMAGENES EN UNA CAPA SUPERPUESTA CON UN PAR DE PUNTAS DE FLECHA PARA IR A IZIQUERDA Y DERECHA Y UNA X PARA CERRAR LA FOTO EN GRANDE
 
 document.addEventListener('DOMContentLoaded', function() {
     const lightbox = document.getElementById('lightbox');
