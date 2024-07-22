@@ -39,8 +39,9 @@
 		  background-color: #3e8e41; /* Color de fondo verde más oscuro al pasar el ratón */
 		}
 
+/*-----------------------------------------------------------------------*/
 
-		/*clase contenedor para formatear un DIV SIN FOTO DE FONDO y con varias secciones */
+	/*clase contenedor para formatear un DIV SIN FOTO DE FONDO y con varias secciones */
 		.containerDivnormal {
 			display: flex;
 			justify-content: space-between;
@@ -49,10 +50,7 @@
 			overflow: hidden;
 			min-height: 700px; /* Ajusta la altura según necesites */
 		}
-		
-		
-		
-		
+	
 		.containerDivnormal .section1 {
 		  color: Black; /* Cambiar el color del texto a blanco */
 		  flex-basis: calc((100%) - 10px); /* Ajusta el ancho de cada sección */
@@ -99,6 +97,7 @@
 			font-weight: bold; /* Hace el texto más grueso */
 		}
 
+/*-----------------------------------------------------------------------*/
 		
 		/*clase contenedor para FORMATEAR UN  DIV CON UN FONDO DE FOTO Y VARIAS SECCIONES*/
 		.containerDiv {
@@ -164,6 +163,7 @@
 		  flex-basis: calc((100%/4) - 10px); /* Ajusta el ancho de cada sección */
 		}
 	
+/*-----------------------------------------------------------------------*/
 	
 /* Estilos de la Cabecera y la Barra de Navegación */
 
@@ -304,10 +304,10 @@
 		}
 
 
+/*-----------------------------------------------------------------------*/
 
 
-
-/* Estilos Cuadro chequeo de disponibilidad */
+/* Estilos Cuadro Chequeo de disponibilidad */
 	
 		#myDiv {
 		  display: flex; /* Make the div a Flexbox container */
@@ -358,7 +358,24 @@
 
 		
 /* Estilos para los campos del formulario de contactos */
-			/* Add styling to the form container */
+
+		.containerForm {
+		  display: flex; /* Convertir el div en un contenedor Flexbox */
+		  align-items: flex-start; /* Alinear verticalmente a la izquierda */
+		  justify-content: flex-start; /* Alinear horizontalmente a la izquierda */
+		  max-width: 800px;
+		  margin: 5% 0;
+		  padding: 20px;
+		  background-color: #fff;
+		  border-radius: 10px;
+		  overflow: hidden;
+		  box-sizing: border-box;
+		  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+		  color: #208352;
+		}
+		
+		
+		/* Add styling to the form container */
 		.section form {
 		  display: flex; /* Make the form a flexbox container */
 		  flex-direction: column; /* Stack elements vertically */
@@ -405,6 +422,7 @@
 		  background-color: #3e8e41;
 		}
 
+/*-----------------------------------------------------------------------*/
 
 /* Estilos icono flotante de Whatsapp */
 		.whatsapp-float {
@@ -452,7 +470,7 @@
 		}
 
 		
-		
+/*-----------------------------------------------------------------------*/		
 		
 		/* Banner de politicas y avisos*/
 		.banner {
@@ -506,6 +524,7 @@
 		  text-decoration: underline;
 		}
 
+/*-----------------------------------------------------------------------*/
 
 	/* Estilos del pie de pagina */
 		footer {
@@ -536,7 +555,7 @@
 
 
 
-
+/*-----------------------------------------------------------------------*/
 
 /* Estilos de la Galeria */
 
@@ -621,9 +640,9 @@
 		  overflow: hidden;
 		}
 
+/*-----------------------------------------------------------------------*/
 
-
-/* EN PRUEBAS BOTON SUBIR*/
+/* estolos para el botón subir al inicio de pantalla */
 	#scrollTopBtn {
 	  display: none; /* Oculto por defecto */
 	  position: fixed;
