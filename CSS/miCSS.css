@@ -585,6 +585,7 @@
 		.lightbox-gallery div > img {
 		  max-width: 100%;
 		  display: block;
+		  cursor:pointer;
 		}
 
 		.lightbox-gallery div {
@@ -613,7 +614,7 @@
 		  position: fixed;
 		  top: 0;
 		  left: 0;
-		  z-index: 20;
+		  z-index: 100;
 		  padding-top: 150px; /*este valor baja la foto de la galeria para que no sea tapada con el menu fijo de navegación*/
 		  box-sizing: border-box;
 		  overflow-y: auto; /* Permitir desplazamiento vertical cuando se está monstrando la imagen grande */
