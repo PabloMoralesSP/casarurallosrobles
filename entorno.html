@@ -7,9 +7,9 @@
  	<!-- ... otros elementos ... -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 	<link rel="stylesheet" href="CSS/miCSS.css">
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script src="JS/galeria.js"></script>
 	<script src="JS/miArchivo.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="JS/Galeria.js"></script>
 </head>
 <body>
     <header class="sticky-header">
@@ -48,8 +48,6 @@
 		</div>
     </header>
     <main>
-	
-	
 
 		<div class="containerDivnormal">
 			<section class="section1">
@@ -107,7 +105,7 @@
 				<div><img src="./ImagenesGaleria/Thumbnails/20210905_123839.jpg" data-image-hd="./ImagenesGaleria/20210905_123839.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, quae, quam. Ut dolorum quia, unde dicta at harum porro officia obcaecati ipsam deserunt fugit dolore delectus quam, maxime nisi quo."></div>
 				<div><img src="./ImagenesGaleria/Thumbnails/20210905_124604.jpg" data-image-hd="./ImagenesGaleria/20210905_124604.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, quae, quam. Ut dolorum quia, unde dicta at harum porro officia obcaecati ipsam deserunt fugit dolore delectus quam, maxime nisi quo."></div>
 				<div><img src="./ImagenesGaleria/Thumbnails/20210905_131211.jpg" data-image-hd="./ImagenesGaleria/20210905_131211.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, quae, quam. Ut dolorum quia, unde dicta at harum porro officia obcaec."></div>
-					<div><img src="./ImagenesGaleria/Thumbnails/image-216e304a-95c7-43ba-a7df-4b31755b93fc.jpg" data-image-hd="./ImagenesGaleria/image-216e304a-95c7-43ba-a7df-4b31755b93fc.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, quae, quam. Ut dolorum quia, unde dicta at harum porro officia obcaecati ipsam deserunt fugit dolore delectus quam, maxime nisi quo."></div>
+				<div><img src="./ImagenesGaleria/Thumbnails/image-216e304a-95c7-43ba-a7df-4b31755b93fc.jpg" data-image-hd="./ImagenesGaleria/image-216e304a-95c7-43ba-a7df-4b31755b93fc.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, quae, quam. Ut dolorum quia, unde dicta at harum porro officia obcaecati ipsam deserunt fugit dolore delectus quam, maxime nisi quo."></div>
 				<div><img src="./ImagenesGaleria/Thumbnails/image-5b124e1e-2e71-4d6c-8810-7c0cfbf7dbad.jpg" data-image-hd="./ImagenesGaleria/image-5b124e1e-2e71-4d6c-8810-7c0cfbf7dbad.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, quae, quam. Ut dolorum quia, unde dicta at harum porro officia obcaecati ipsam deserunt fugit dolore delectus quam, maxime nisi quo."></div>
 				<div><img src="./ImagenesGaleria/Thumbnails/image-605da3eb-c39f-4ef0-bda3-8b3bd07e3dc2.jpg" data-image-hd="./ImagenesGaleria/image-605da3eb-c39f-4ef0-bda3-8b3bd07e3dc2.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, quae, quam. Ut dolorum quia, unde dicta at harum porro officia obcaecati ipsam deserunt fugit dolore delectus quam, maxime nisi quo."></div>
 				<div><img src="./ImagenesGaleria/Thumbnails/IMG-20200614-WA0002.jpg" data-image-hd="./ImagenesGaleria/IMG-20200614-WA0002.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, quae, quam. Ut dolorum quia, unde dicta at harum porro officia obcaecati ipsam deserunt fugit dolore delectus quam, maxime nisi quo."></div>
@@ -117,11 +115,16 @@
 				<div><img src="./ImagenesGaleria/Thumbnails/IMG-20200619-WA0029.jpg" data-image-hd="./ImagenesGaleria/IMG-20200619-WA0029.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, quae, quam. Ut dolorum quia, unde dicta at harum porro officia obcaecati ipsam deserunt fugit dolore delectus quam, maxime nisi quo."></div>
 				<div><img src="./ImagenesGaleria/Thumbnails/IMG-20200619-WA0030.jpg" data-image-hd="./ImagenesGaleria/IMG-20200619-WA0030.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, quae, quam. Ut dolorum quia, unde dicta at harum porro officia obcaecati ipsam deserunt fugit dolore delectus quam, maxime nisi quo."></div>
 				<div><img src="./ImagenesGaleria/Thumbnails/IMG-20200619-WA0031.jpg" data-image-hd="./ImagenesGaleria/IMG-20200619-WA0031.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, quae, quam. Ut dolorum quia, unde dicta at harum porro officia obcaecati ipsam deserunt fugit dolore delectus quam, maxime nisi quo."></div>
-				
 			</div>
 		  </div>
 		
     </main>
+
+    <div class="lightbox" id="lightbox">
+        <img src="" alt="" id="lightbox-img">
+        <p class="caption" id="lightbox-caption"></p>
+        <span class="close" id="lightbox-close">&times;</span>
+    </div>
 
 	<a href="https://api.whatsapp.com/send/?phone=34678985395&text&type=phone_number&app_absent=0" 
        class="whatsapp-float" 

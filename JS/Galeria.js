@@ -1,42 +1,25 @@
-
+	
 
 // CODIGO PARA LA GALERIA
 
 $(document).ready(function() {
-  // Crear el lightbox
-  var $lightbox = $("<div class='lightbox'></div>");
-  var $img = $("<img>");
-  var $caption = $("<p class='caption'></p>");
+    // Al hacer clic en una imagen de la galería
+    $('.lightbox-gallery img').on('click', function() {
+        var src = $(this).attr('data-image-hd');
+        var alt = $(this).attr('alt');
+        $('#lightbox-img').attr('src', src);
+        $('#lightbox-caption').text(alt);
+        $('#lightbox').fadeIn();
+    });
 
-  // Añadir imagen y caption al lightbox
-  $lightbox.append($img).append($caption);
+    // Al hacer clic en el botón de cerrar
+    $('#lightbox-close').on('click', function() {
+        $('#lightbox').fadeOut();
+    });
 
-  // Añadir lightbox al documento
-  $('body').append($lightbox);
-
-  // Acción al hacer clic en una imagen de la galería
-  $('.lightbox-gallery img').click(function(e) {
-    e.preventDefault();
-
-    // Obtener el enlace de la imagen y la descripción
-    var src = $(this).attr("data-image-hd");
-    var cap = $(this).attr("alt");
-
-    // Añadir datos al lightbox
-    $img.attr('src', src);
-    $caption.text(cap);
-
-    // Mostrar el lightbox
-    $lightbox.fadeIn('fast');
-	$('body').addClass('no-scroll');
-  });
-
-  // Acción al hacer clic en el lightbox para cerrarlo
-	$lightbox.click(function() {
-		$lightbox.fadeOut('fast', function() {
-		  $('body').removeClass('no-scroll');
-		});
-	  });
+    // Cerrar el lightbox al hacer clic fuera de la imagen
+    $('#lightbox').on('click', function(e) {
+        if (e.target !== this) return;
+        $(this).fadeOut();
+    });
 });
-
-
