@@ -71,13 +71,14 @@
 			<div class="containerForm">
 				<section class="section">
 					<h3>Formulario de contacto</h3>
-						<form id="contactForm" action="mailto:pablog_689@hotmail.com" method="post" enctype="text/plain">
+						<form id="my-form" action="https://formspree.io/f/xrbzeqlb" method="POST" enctype="multipart/form-data">
 						  <input type="text" id="name" name="name" placeholder="Nombre Completo" required>
 						  <input type="email" id="email" name="email" placeholder="Correo Electrónico" required>
-						  <input type="text" id="arrival" name="arrival" placeholder="Fecha de Entrada" required>
-						  <input type="text" id="departure" name="departure" placeholder="Fecha de Salida" required>
+						  <input type="date" id="arrival" name="arrival" placeholder="Fecha de Entrada" required>
+						  <input type="date" id="departure" name="departure" placeholder="Fecha de Salida" required>
 						  <textarea id="message" name="message" placeholder="Indicar número de personas, mascotas, y cualquier duda sobre el alojamiento o entorno."></textarea>
-						  <button type="submit">Enviar</button>
+						   <button id="my-form-button">Enviar</button>
+						  <p id="my-form-status"></p>
 						</form>
 				</section>
 			</div> 
