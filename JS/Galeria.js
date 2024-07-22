@@ -2,24 +2,45 @@
 
 // CODIGO PARA LA GALERIA
 
-$(document).ready(function() {
-    // Al hacer clic en una imagen de la galería
-    $('.lightbox-gallery img').on('click', function() {
-        var src = $(this).attr('data-image-hd');
-        var alt = $(this).attr('alt');
-        $('#lightbox-img').attr('src', src);
-        $('#lightbox-caption').text(alt);
-        $('#lightbox').fadeIn();
+document.addEventListener('DOMContentLoaded', function() {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxCaption = document.getElementById('lightbox-caption');
+    const closeBtn = document.getElementById('lightbox-close');
+    const prevBtn = document.getElementById('lightbox-prev');
+    const nextBtn = document.getElementById('lightbox-next');
+
+    let currentIndex = 0;
+	const images = document.querySelectorAll('.lightbox-gallery img'); // Suponiendo que las imágenes están dentro de un contenedor con clase 'gallery'
+
+    function showLightbox(index) {
+        currentIndex = index;
+        lightboxImg.src = images[currentIndex].src;
+        lightboxCaption.textContent = images[currentIndex].alt;
+        lightbox.style.display = 'block';
+    }
+
+    function hideLightbox() {
+        lightbox.style.display = 'none';
+    }
+
+    function showNextImage() {
+        currentIndex = (currentIndex + 1) % images.length;
+        showLightbox(currentIndex);
+    }
+
+    function showPrevImage() {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        showLightbox(currentIndex);
+    }
+
+    images.forEach((img, index) => {
+        img.addEventListener('click', () => {
+            showLightbox(index);
+        });
     });
 
-    // Al hacer clic en el botón de cerrar
-    $('#lightbox-close').on('click', function() {
-        $('#lightbox').fadeOut();
-    });
-
-    // Cerrar el lightbox al hacer clic fuera de la imagen
-    $('#lightbox').on('click', function(e) {
-        if (e.target !== this) return;
-        $(this).fadeOut();
-    });
+    closeBtn.addEventListener('click', hideLightbox);
+    nextBtn.addEventListener('click', showNextImage);
+    prevBtn.addEventListener('click', showPrevImage);
 });
