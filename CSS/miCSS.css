@@ -224,7 +224,7 @@
 		}
 		
 	/* Ocultar el menú y mostrar el botón en pantallas pequeñas */
-		/* Inicialmente oculta el botón menú para pantallas pequeñas */
+		/* Inicialmente oculta el botón menú para pantallas pequeñas y el propio menu de las pantallas pequeñas  */
 		.menu-button {
 		  display: none;
 		  background: none;
@@ -233,7 +233,7 @@
 		  color: #28A466;
 		  font-weight: bold;
 		  position: right;
-
+		  right: 5px;
 		}
 		
 		  .mobile-nav {
@@ -247,9 +247,15 @@
 				flex-direction: column;  /* Ordenar verticalmente en modo responsivo */
 			}
 
-			.menu-button {
-				display: block;
-			}
+		.menu-button {
+		  display: block;
+		  background: none;
+		  border: none;
+		  font-size: 24px;
+		  color: #28A466;
+		  font-weight: bold;
+		  position: right;
+		}
 
 		 .mobile-nav {
 			display: none;
