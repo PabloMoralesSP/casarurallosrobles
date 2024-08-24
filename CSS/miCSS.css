@@ -188,11 +188,12 @@
 		
         .logo img {
             height: 80px; /* Ajusta según el tamaño de tu logo */
+			margin-left: 20px;
         }
 		
 		.navigation-wrapper {
-		  position: right; /* Position the item absolutely */
-		  left: 60%; /* Center horizontally */
+		  position: flex; /* Position the item absolutely */
+		  left: 80%; /* Center horizontally */
 		  transform: translateX(-50%); /* Adjust for centering */
 		  /* z-index: 100;*/
 		}
@@ -242,7 +243,7 @@
 		}
 
 		/* Estilos para el menú responsivo (pantallas pequeñas) */
-		@media (max-width: 860px) {
+		@media (max-width: 1250px) {
 			.navigation-wrapper nav ul {
 				display: none;
 				flex-direction: column;  /* Ordenar verticalmente en modo responsivo */
