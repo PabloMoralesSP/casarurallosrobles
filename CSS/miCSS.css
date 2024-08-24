@@ -270,8 +270,6 @@
 			align-items: center;
 			flex-direction: column;
 			color: #28A466;
-			  text-decoration: none; /* Quita el subrayado */
-  list-style: none; /* Quita los marcadores de lista */
 
 		  }
 
@@ -289,6 +287,8 @@
 			color: #28A466;
             font-weight: bold;
 			font-size: 24px;
+			text-decoration: none; /* Quita el subrayado */
+			list-style: none; /* Quita los marcadores de lista */
 		  }
 		  .mobile-nav nav ul li a:hover {
 			color: #fff;
@@ -309,6 +309,7 @@
 
 		  .mobile-nav.show {
 			display: flex;
+
 		  }
 		}
 
