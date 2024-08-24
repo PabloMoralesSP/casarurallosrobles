@@ -191,9 +191,10 @@
         }
 		
 		.navigation-wrapper {
-		  position: fixed; /* Position the item absolutely */
+		  position: right; /* Position the item absolutely */
 		  left: 60%; /* Center horizontally */
 		  transform: translateX(-50%); /* Adjust for centering */
+		  /* z-index: 100;*/
 		}
 		
         .navigation-wrapper nav ul {
@@ -232,8 +233,8 @@
 		  font-size: 24px;
 		  color: #28A466;
 		  font-weight: bold;
-		  position: right;
-		  right: 5px;
+		  justify-content: flex-end;
+		  margin-right: 25px;;
 		}
 		
 		  .mobile-nav {
@@ -254,7 +255,6 @@
 		  font-size: 24px;
 		  color: #28A466;
 		  font-weight: bold;
-		  position: right;
 		}
 
 		 .mobile-nav {
