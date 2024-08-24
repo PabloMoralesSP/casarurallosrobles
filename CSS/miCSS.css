@@ -244,10 +244,10 @@
 
 		/* Estilos para el menú responsivo (pantallas pequeñas) */
 		@media (max-width: 1250px) {
-			.navigation-wrapper nav ul {
-				display: none;
-				flex-direction: column;  /* Ordenar verticalmente en modo responsivo */
-			}
+		.navigation-wrapper nav ul {
+			display: none;
+			flex-direction: column;  /* Ordenar verticalmente en modo responsivo */
+		}
 
 		.menu-button {
 		  display: block;
@@ -266,7 +266,7 @@
 			width: 100%;
 			height: 100%;
 			background-color: rgba(0, 0, 0, 0.8);
-			z-index: 200;
+			z-index: 500;
 			justify-content: center;
 			align-items: center;
 			flex-direction: column;
@@ -316,6 +316,7 @@
 			display: flex;
 
 		  }
+		  
 		}
 
 
