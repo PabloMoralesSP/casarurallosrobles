@@ -57,7 +57,7 @@
 		.containerDivnormal .section2 {
 		  color: Black; /* Cambiar el color del texto a blanco */
 		  flex-basis: calc((100%/2) - 10px); /* Ajusta el ancho de cada sección */
-		  padding-left: 20px; /* Introduce una sangría de 20px en todo el parrafo*/
+		  padding-left: 40px; /* Introduce una sangría de 20px en todo el parrafo*/
 		}
 
 		.containerDivnormal .section3 {
