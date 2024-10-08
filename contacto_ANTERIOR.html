@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Robles - Alojamiento Rural</title>
+	<!-- ... otros elementos ... -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<link rel="stylesheet" href="CSS/miCSS.css">
+	<script src="JS/miArchivo.js"></script>
+</head>
+<body>
+    <header class="sticky-header">
+        <div class="header-container"> 
+			<div class="logo">
+			  <a href="index.html">
+				<img src="Logo_Los_Robles.png" alt="Los Robles del Ocejón">
+			  </a>
+			</div>
+			<!-- ... Menu navegación pantallas Grandes ... -->
+			<div class="navigation-wrapper">
+			<nav>
+				<ul id="nav-menu">
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="lacasa.html">Casa Rural</a></li>
+					<li><a href="tarifas-disponibilidad.html">Tarifas y Disponibilidad</a></li>
+					<li><a href="entorno.html">Entorno</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+				</ul>
+			<button class="menu-button" id="menuButton"> ☰ MENÚ</button>
+			</nav>
+			</div> 
+			<!-- ... Menu Navegación pantallas pequeñas... -->
+			<div class="mobile-nav" id="mobileNav">
+			<button class="close-button" id="closeButton">✕</button>
+			<nav>
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="lacasa.html">Casa Rural</a></li>
+					<li><a href="tarifas-disponibilidad.html">Tarifas y Disponibilidad</a></li>
+					<li><a href="entorno.html">Entorno</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+				</ul>
+			</nav>
+			</div>
+		</div>
+    </header> 
+    <main>
+	
+		<div class="containerDiv"  id="dynamicBgDiv">
+			<section class="section">
+				<p>      </p>
+			</section>       
+			<section class="section1">
+				<h1>Contactar</h1>
+				<h2>Estamos encantados de atender tus consultas y reservas.</h2>
+			</section>
+		</div>
+		
+		<div class="containerDivnormal">		
+        <section class="section1">
+            <h2>Formas de contacto </h2>
+            <p>No dudes en ponerte en contacto con nosotros, estaremos encantados de ayudarte. Puedes contactarnos por varios medios como, nuestro formulario, o directamente por Email, Whatsapp o Teléfono</p>
+        </section>
+		</div>
+
+		<section class="section2">		
+			<div class="containerForm">
+				<section class="section">
+					<h3>Formulario de contacto</h3>
+						<form id="my-form" action="https://formspree.io/f/xrbzeqlb" method="POST" enctype="multipart/form-data">
+						  <input type="text" id="name" name="name" placeholder="Nombre Completo" required>
+						  <input type="email" id="email" name="email" placeholder="Correo Electrónico" required>
+						  <input type="date" id="arrival" name="arrival" placeholder="Fecha de Entrada" required>
+						  <input type="date" id="departure" name="departure" placeholder="Fecha de Salida" required>
+						  <textarea id="message" name="message" placeholder="Indicar número de personas, mascotas, y cualquier duda sobre el alojamiento o entorno."></textarea>
+						   <button id="my-form-button">Enviar</button>
+						  <p id="my-form-status"></p>
+						</form>
+				</section>
+			</div> 
+				
+			<div class="containerDivnormal">
+				<section class="section2">
+					<h3>Información de contacto</h3>
+					<ul>
+						<li><strong>Nombre del propietario:</strong> [Nombre del propietario]</li>
+						<li><strong>Dirección:</strong> Los Robles del Ocejón, Valverde de los Arroyos, Guadalajara</li>
+						<li><strong>Email:</strong> Sergio@hotmail.com</li>
+						<li><strong>Teléfono:</strong> +34 678 985 395</li>
+					</ul>
+				</section>
+			</div>
+		</section>
+		
+		
+        <section class="section1">
+            <h2>Ubicación</h2>
+            <p>Nos encontramos en la localidad de Valverde de los Arroyos, Guadalajara.</p>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12124.455493264368!2d-3.2266646302246103!3d41.13361070000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd43f7c4d6e6a757%3A0x81def43aa89bf84e!2s19224%20Valverde%20de%20los%20Arroyos%2C%20Guadalajara!5e0!3m2!1ses!2ses!4v1688479189806!5m2!1ses!2ses" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+
+  	<a href="https://api.whatsapp.com/send/?phone=34678985395&text&type=phone_number&app_absent=0" 
+       class="whatsapp-float" 
+       target="_blank"
+       rel="noopener noreferrer">
+        <i class="fab fa-whatsapp"></i>
+		<span class="whatsapp-text">¿Podemos ayudarle?</span>
+    </a>
+
+	<button id="scrollTopBtn" title="Go to top">
+		<i class="fas fa-angle-up"></i>
+	</button>
+	  
+    <footer>
+        <div >
+			<span>© Copyright 2022 </span><a href="index.html">Los Robles del Ocejon</a> <span>Todos los derechos reservados.</span>
+			<span><p><a href="avisolegal.html">Aviso Legal</a>&nbsp;|&nbsp;<a href="politicaprivacidad.html">Política de Privacidad</a> | <a href="politicacookies.html">Política de Cookies</a> |&nbsp;<a href="politicacancelacionreservas.html">Política Reservas de Cancelación&nbsp;|</a> </span></<br><span>by PMM</span>
+			</p>	
+		</div>
+    </footer>
+</body>
+</html>
