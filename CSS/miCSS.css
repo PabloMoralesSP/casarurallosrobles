@@ -13,8 +13,11 @@
             padding: 20px;
 			margin-top: 80px; /* Adjust the value to match the menu height */
         }
+		p {
+			font: oblique 110% Arial, sans-serif;
+  
+		}
 		
-	
 		.check-list, .sin-puntos {
 		  list-style: none; /* Elimina la viñeta por defecto */
 		  padding: 0;
@@ -23,14 +26,14 @@
 
 		.check-list li {
 		  position: relative;
-		  padding-left: 25px;
+		  padding-left: 45px;
 		  margin-bottom: 10px;
 		}
 
 		.check-list li::before {
 		  content: '✓'; /* Símbolo de check */
 		  position: absolute;
-		  left: 0;
+		  left: 15px;
 		  top: 0;
 		  font-size: 18px; /* Ajusta el tamaño del símbolo */
 		  color: green; /* Ajusta el color del símbolo */
@@ -53,7 +56,13 @@
 			padding: 10px 20px; /* Añadir relleno */
         }
 		
-		.section3 .icono {
+		.casita {
+		  width: 150px;
+		  height: 150px;
+		  object-fit: cover; /* Asegura que la imagen mantenga su proporción y llene el contenedor */
+		}
+		
+        .section .icono , .section1 .icono, .section2 .icono, .section3 .icono, .section4 .icono{
 			width: 40px; /* Ajusta el ancho al tamaño deseado */
 			height: auto; /* Mantiene la proporción de la imagen */
 		}
@@ -93,18 +102,18 @@
 		}  
 		.containerDivnormal .section2 {
 		  color: Black; /* Cambiar el color del texto a blanco */
-		  flex-basis: calc((100%/2) - 10px); /* Ajusta el ancho de cada sección */
+		  flex-basis: calc((100%/3) - 10px); /* Ajusta el ancho de cada sección */
 		  padding-left: 55px; /* Introduce una sangría de 20px en todo el parrafo*/
 		}
 
 		.containerDivnormal .section3 {
 		  color: Black; /* Cambiar el color del texto a blanco */
-		  flex-basis: calc((100%/3) - 10px); /* Ajusta el ancho de cada sección */
+		  flex-basis: calc((100%/4) - 10px); /* Ajusta el ancho de cada sección */
 		  padding-left: 55px; /* Introduce una sangría de 20px en todo el parrafo*/
 		}
 		.containerDivnormal .section4 {
 		  color: Black; /* Cambiar el color del texto a blanco */
-		  flex-basis: calc((100%/4) - 10px); /* Ajusta el ancho de cada sección */
+		  flex-basis: calc((100%/5) - 10px); /* Ajusta el ancho de cada sección */
 		}
 		.containerDivnormal h1 {
 			font-family: Arial, sans-serif;
@@ -189,16 +198,16 @@
 		}  
 		.containerDiv .section2 {
 		  color: white; /* Cambiar el color del texto a blanco */
-		  flex-basis: calc((100%/2) - 10px); /* Ajusta el ancho de cada sección */
+		  flex-basis: calc((100%/3) - 10px); /* Ajusta el ancho de cada sección */
 		}
 
 		.containerDiv .section3 {
 		  color: white; /* Cambiar el color del texto a blanco */
-		  flex-basis: calc((100%/3) - 10px); /* Ajusta el ancho de cada sección */
+		  flex-basis: calc((100%/4) - 10px); /* Ajusta el ancho de cada sección */
 		}
 		.containerDiv .section4 {
 		  color: white; /* Cambiar el color del texto a blanco */
-		  flex-basis: calc((100%/4) - 10px); /* Ajusta el ancho de cada sección */
+		  flex-basis: calc((100%/5) - 10px); /* Ajusta el ancho de cada sección */
 		}
 	
 /*-----------------------------------------------------------------------*/
