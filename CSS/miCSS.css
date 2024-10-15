@@ -14,7 +14,41 @@
 			margin-top: 80px; /* Adjust the value to match the menu height */
         }
 		
-		 .map{
+		
+------------------------------		
+
+.check-list, .sin-puntos {
+  list-style: none; /* Elimina la viñeta por defecto */
+  padding: 0;
+  margin: 0; /* Asegúrate de que no haya margen extra */
+}
+
+.check-list li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 10px;
+}
+
+.check-list li::before {
+  content: '✓'; /* Símbolo de check */
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 18px; /* Ajusta el tamaño del símbolo */
+  color: green; /* Ajusta el color del símbolo */
+}
+	
+---------------------
+
+
+		
+
+		.alinear {
+			display: flex;
+			align-items: center; /* Centra verticalmente el contenido */
+		}
+		
+		.map{
 			flex:1;
 			padding: 10px 50px; /* Añadir relleno */
         }
@@ -25,7 +59,12 @@
 			padding: 10px 20px; /* Añadir relleno */
         }
 		
-
+		.section3 .icono {
+			width: 40px; /* Ajusta el ancho al tamaño deseado */
+			height: auto; /* Mantiene la proporción de la imagen */
+		}
+		
+		
 		.section a, .section1 a, .section2 a, .section3 a, .section4 a {
 		  /* Eliminar estilos por defecto de enlaces */
 		  display: inline-block; /* Convertir el enlace en un bloque en línea */
