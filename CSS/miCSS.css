@@ -15,7 +15,6 @@
         }
 		
 	
-
 		.check-list, .sin-puntos {
 		  list-style: none; /* Elimina la viñeta por defecto */
 		  padding: 0;
@@ -38,7 +37,6 @@
 		}
 			
 	
-
 		.alinear {
 			display: flex;
 			align-items: center; /* Centra verticalmente el contenido */
