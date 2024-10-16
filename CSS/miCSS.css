@@ -63,13 +63,21 @@
 		  height: 150px;
 		  object-fit: cover; /* Asegura que la imagen mantenga su proporción y llene el contenedor */
 		  animation: fadeIn 3s ease-in-out forwards;
+		  transition: transform 0.9s ease; /* Suaviza el efecto de la transición */
+		  z-index: 1; /* Establece un índice z inicial */
+		  position: relative; /* Asegura que la imagen pueda utilizar z-index */
 		}
 
-		/* El siguiente Keyframs ajusta el comienzo y final de las imagenes animadas con la clase 'casita' */
+		/* El siguiente Keyframs ajusta el comienzo y final de de la 'animation' sobre las imagenes con la clase 'casita' */
 		@keyframes fadeIn {
 		  from { opacity: 0; }
 		  to { opacity: 1; }
 		}
+		
+		.casita:hover {
+  transform: scale(2.9); /* Aumenta el tamaño de la imagen al pasar el ratón */
+   z-index: 100; /* Asegura que la imagen ampliada esté por encima de otros elementos */
+}
 
 
         .section .icono , .section1 .icono, .section2 .icono, .section3 .icono, .section4 .icono{
