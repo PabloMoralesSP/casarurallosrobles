@@ -308,81 +308,82 @@
 			display: none;
 		}
 
-		/* Estilos para el menú responsivo (pantallas pequeñas) */
+	/* Estilos para el menú responsivo (pantallas pequeñas) */
 		@media (max-width: 1250px) {
-		.navigation-wrapper nav ul {
-			display: none;
-			flex-direction: column;  /* Ordenar verticalmente en modo responsivo */
-		}
+			.navigation-wrapper nav ul {
+				display: none;
+				flex-direction: column;  /* Ordenar verticalmente en modo responsivo */
+			}
 
-		.menu-button {
-		  display: block;
-		  background: none;
-		  border: none;
-		  font-size: 24px;
-		  color: #28A466;
-		  font-weight: bold;
-		}
+			.menu-button {
+			  display: block;
+			  background: none;
+			  border: none;
+			  font-size: 24px;
+			  color: #28A466;
+			  font-weight: bold;
+			}
 
-		 .mobile-nav {
-			display: none;
-			position: fixed;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			background-color: rgba(0, 0, 0, 0.8);
-			z-index: 500;
-			justify-content: center;
-			align-items: center;
-			flex-direction: column;
-			color: #28A466;
+			 .mobile-nav {
+				display: none;
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(0, 0, 0, 0.8);
+				z-index: 500;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				color: #28A466;
+			  }
 
-		  }
+			  .mobile-nav nav ul {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				text-decoration: none; /* Quita el subrayado */
+				list-style: none; /* Quita los marcadores de lista */
+			  }
 
-		  .mobile-nav nav ul {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			text-decoration: none; /* Quita el subrayado */
-			list-style: none; /* Quita los marcadores de lista */
-		  }
+			  .mobile-nav nav ul li {
+				margin: 15px 0;
+				text-decoration: none; /* Quita el subrayado */
+				list-style: none; /* Quita los marcadores de lista */
+			  }
 
-		  .mobile-nav nav ul li {
-			margin: 15px 0;
-			text-decoration: none; /* Quita el subrayado */
-			list-style: none; /* Quita los marcadores de lista */
-		  }
+			  .mobile-nav nav ul li a {
+				color: #28A466;
+				font-weight: bold;
+				font-size: 24px;
+				text-decoration: none; /* Quita el subrayado */
+				list-style: none; /* Quita los marcadores de lista */
+			  }
+			  .mobile-nav nav ul li a:hover {
+				color: #fff;
+				transform: scale(1.1); /* Aumenta el tamaño del botón */
+				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añade una sombra */
+			  }
 
-		  .mobile-nav nav ul li a {
-			color: #28A466;
-            font-weight: bold;
-			font-size: 24px;
-			text-decoration: none; /* Quita el subrayado */
-			list-style: none; /* Quita los marcadores de lista */
-		  }
-		  .mobile-nav nav ul li a:hover {
-			color: #fff;
-			transform: scale(1.1); /* Aumenta el tamaño del botón */
-			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añade una sombra */
-			
-		}
+			  .close-button {
+				position: absolute;
+				top: 20px;
+				right: 20px;
+				background: none;
+				border: none;
+				font-size: 24px;
+				color: #fff;
+			  }
 
-		  .close-button {
-			position: absolute;
-			top: 20px;
-			right: 20px;
-			background: none;
-			border: none;
-			font-size: 24px;
-			color: #fff;
-		  }
-
-		  .mobile-nav.show {
-			display: flex;
-
-		  }
+			  .mobile-nav.show {
+				display: flex;
+			  }
 		  
+		    .zoom {
+    transform-origin: center; /* Asegura que la imagen crezca desde el centro */
+  }
+  
 		}
 
 
@@ -737,10 +738,6 @@
 		.no-scroll {
 		  overflow: hidden;
 		}		
-
-
-
-
 
 
 
