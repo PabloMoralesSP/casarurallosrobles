@@ -380,7 +380,7 @@
 				display: flex;
 			  }
 		  
-		    .zoom {
+ .casita {
     transform-origin: center; /* Asegura que la imagen crezca desde el centro */
   }
   
