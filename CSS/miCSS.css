@@ -75,9 +75,9 @@
 		}
 		
 		.casita:hover {
-  transform: scale(2.9); /* Aumenta el tamaño de la imagen al pasar el ratón */
-   z-index: 100; /* Asegura que la imagen ampliada esté por encima de otros elementos */
-}
+		  transform: translate(50%, 50%) scale(2.9); /* Aumenta el tamaño de la imagen al pasar el ratón */
+		   z-index: 100; /* Asegura que la imagen ampliada esté por encima de otros elementos */
+		}
 
 
         .section .icono , .section1 .icono, .section2 .icono, .section3 .icono, .section4 .icono{
@@ -380,10 +380,15 @@
 				display: flex;
 			  }
 		  
- .casita {
-    transform-origin: center; /* Asegura que la imagen crezca desde el centro */
-  }
-  
+			  .casita {
+				  
+			 transform-origin: center; /* Asegura que la imagen crezca desde el centro */
+			  }
+			  
+			  .casita:hover {
+
+				transform: translate(50%, 50%) scale(2.1); /* Ampliar la imagen desde el centro */
+			  }
 		}
 
 
