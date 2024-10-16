@@ -1,5 +1,5 @@
 
-//CODIGO JAVA SCRIPT PAGINA INICIO
+//CODIGO JAVA SCRIPT CONSULTA DISPONIBILIDAD PAGINA INICIO
 
 function redirectToContact() {
   var email = document.getElementById('emailInput').value;
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
     'url("https://pablomoralessp.github.io/casarurallosrobles/ImagenesGaleria/20210904_124606.jpg")'
 
   ];
-  let currentIndex = 0;
+  let currentIndex = Math.floor(Math.random() * images.length);
 
   function changeBackground() {
     currentIndex = (currentIndex + 1) % images.length;
@@ -66,8 +66,8 @@ document.addEventListener('DOMContentLoaded', function () {
   // Initial background
   changeBackground();
 
-  // Change background every 12 seconds
-  setInterval(changeBackground, 5000);
+  // Change background every 4 seconds
+  setInterval(changeBackground, 4000);
 });
 
 // CODIGO PARA EL MENU REDUCIDO AL ENCOGER PANTALLA DEL NAVEGADOR

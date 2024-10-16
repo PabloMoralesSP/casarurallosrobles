@@ -62,8 +62,16 @@
 		  width: 150px;
 		  height: 150px;
 		  object-fit: cover; /* Asegura que la imagen mantenga su proporción y llene el contenedor */
+		  animation: fadeIn 3s ease-in-out forwards;
 		}
-		
+
+		/* El siguiente Keyframs ajusta el comienzo y final de las imagenes animadas con la clase 'casita' */
+		@keyframes fadeIn {
+		  from { opacity: 0; }
+		  to { opacity: 1; }
+		}
+
+
         .section .icono , .section1 .icono, .section2 .icono, .section3 .icono, .section4 .icono{
 			width: 40px; /* Ajusta el ancho al tamaño deseado */
 			height: auto; /* Mantiene la proporción de la imagen */
