@@ -5,8 +5,8 @@
 		  line-height: 1.6;
           margin: 0;
           padding: 0;
-		 
-		  font-family: "Open Sans", sans-serif;
+		  font-size: 19px;
+		  font-family: Arial, sans-serif;
 		}
 		
         main {
@@ -14,8 +14,10 @@
 			margin-top: 80px; /* Adjust the value to match the menu height */
         }
 		p {
-			font: oblique 110% Arial, sans-serif;
-  
+			/*font: oblique 110% Arial, sans-serif;*/
+			font-family: Arial, sans-serif;
+			font-size: 19px;
+			font-weight: 500;
 		}
 		
 		.check-list, .sin-puntos {
@@ -35,7 +37,7 @@
 		  position: absolute;
 		  left: 15px;
 		  top: 0;
-		  font-size: 18px; /* Ajusta el tamaño del símbolo */
+		  font-size: 19px; /* Ajusta el tamaño del símbolo */
 		  color: green; /* Ajusta el color del símbolo */
 		}
 			
@@ -52,7 +54,7 @@
         .section , .section1, .section2, .section3, .section4 {
 			flex:1;
             margin-bottom: 20px;
-			min-width: 300px; /* Asegura que las secciones no se vuelvan demasiado estrechas */
+			min-width: 270px; /* Asegura que las secciones no se vuelvan demasiado estrechas */
 			padding: 10px 20px; /* Añadir relleno */
         }
 		
@@ -126,7 +128,7 @@
 		}
 		.containerDivnormal h2 {
 			font-family: Arial, sans-serif;
-			font-size: 23px;
+			/* font-size: 23px; */
 			font-weight: 300;
 			color: #208352; /* Cambia el color del texto a blanco */
 			text-align: left;
@@ -136,7 +138,7 @@
 		
 		.containerDivnormal h3 {
 			font-family: Arial, sans-serif;
-			font-size: 18px;
+			/* font-size: 18px; */
 			font-weight: 300;
 			color: #28A466; /* Cambia el color del texto a blanco */
 			text-align: left;
@@ -389,7 +391,7 @@
 		  background-color: #fff;
 		  padding: 20px;
 		  border-radius: 8px;
-		  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
 		  gap: 10px;
 		  align-items: center;
 		}
