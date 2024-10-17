@@ -1,3 +1,43 @@
+//CODIGO JAVA SCRIPT ANIMACIÓN CAIDA DE HOJAS AL PULSAR UN BOTON DEL MENU
+
+document.addEventListener('DOMContentLoaded', () => {
+    const menuButtons = document.querySelectorAll('.navigation-wrapper nav ul li a');
+
+    menuButtons.forEach(button => {
+        button.addEventListener('click', (event) => {
+            event.preventDefault();
+            const buttonPosition = {
+                left: button.getBoundingClientRect().left,
+                bottom: button.getBoundingClientRect().bottom
+            };
+            sessionStorage.setItem('leafButtonPosition', JSON.stringify(buttonPosition));
+            window.location.href = button.href;
+        });
+    });
+
+    const buttonPosition = JSON.parse(sessionStorage.getItem('leafButtonPosition'));
+
+    if (buttonPosition) {
+        const leaf = document.createElement('div');
+        leaf.classList.add('leaf');
+        leaf.style.left = `${buttonPosition.left}px`;
+        leaf.style.top = `${buttonPosition.bottom}px`;
+        leaf.style.animationDuration = `${Math.random() * 3 + 3}s`;
+
+        document.body.appendChild(leaf);
+
+        requestAnimationFrame(() => {
+            leaf.style.display = 'block';
+        });
+
+        leaf.addEventListener('animationend', () => {
+            leaf.remove();
+            sessionStorage.removeItem('leafButtonPosition');
+        });
+    }
+});
+
+
 
 //CODIGO JAVA SCRIPT CONSULTA DISPONIBILIDAD PAGINA INICIO
 
@@ -48,28 +88,29 @@ document.addEventListener("DOMContentLoaded", function() {
 // CODIGO JAVA SCRIPT PARA TENER UN FONDO DE IMAGENES INTERCAMBIABLES EN UN ELEMENTO DIV
 
 document.addEventListener('DOMContentLoaded', function () {
-  const bgDiv = document.getElementById('dynamicBgDiv');
-  const images = [
-    'url("https://pablomoralessp.github.io/casarurallosrobles/ImagenesGaleria/FondosTitulos/20210905_124604.jpg")',
-    'url("https://pablomoralessp.github.io/casarurallosrobles/ImagenesGaleria/FondosTitulos/20210905_131211.jpg")',
-    'url("https://pablomoralessp.github.io/casarurallosrobles/ImagenesGaleria/FondosTitulos/20210904_124606.jpg")',
-	'url("https://pablomoralessp.github.io/casarurallosrobles/ImagenesGaleria/FondosTitulos/IMG-20200619-WA0026.jpg")'
-  ];
-  
-  let currentIndex = Math.floor(Math.random() * images.length);
+    const bgDiv = document.getElementById('dynamicBgDiv');
+    const images = [
+        'url("https://pablomoralessp.github.io/casarurallosrobles/ImagenesGaleria/FondosTitulos/20210905_124604.jpg")',
+        'url("https://pablomoralessp.github.io/casarurallosrobles/ImagenesGaleria/FondosTitulos/20210905_131211.jpg")',
+        'url("https://pablomoralessp.github.io/casarurallosrobles/ImagenesGaleria/FondosTitulos/20210904_124606.jpg")',
+        'url("https://pablomoralessp.github.io/casarurallosrobles/ImagenesGaleria/FondosTitulos/IMG-20200619-WA0026.jpg")'
+    ];
 
-  function changeBackground() {
-    currentIndex = (currentIndex + 1) % images.length;
-    const backgroundImage = `linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), ${images[currentIndex]}`;
-    bgDiv.style.backgroundImage = backgroundImage;
-  }
+    // Selecciona una imagen aleatoria como primera imagen
+    let currentIndex = Math.floor(Math.random() * images.length);
+    const initialBackgroundImage = `linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), ${images[currentIndex]}`;
+    bgDiv.style.backgroundImage = initialBackgroundImage;
 
-  // Initial background
-  changeBackground();
+    function changeBackground() {
+        currentIndex = (currentIndex + 1) % images.length;
+        const backgroundImage = `linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), ${images[currentIndex]}`;
+        bgDiv.style.backgroundImage = backgroundImage;
+    }
 
-  // Change background every 4 seconds
-  setInterval(changeBackground, 4000);
+    // Cambia el fondo cada 4 segundos
+    setInterval(changeBackground, 5000);
 });
+
 
 // CODIGO PARA EL MENU REDUCIDO AL ENCOGER PANTALLA DEL NAVEGADOR
 

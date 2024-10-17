@@ -13,6 +13,7 @@
             padding: 20px;
 			margin-top: 80px; /* Adjust the value to match the menu height */
         }
+		
 		p {
 			/*font: oblique 110% Arial, sans-serif;*/
 			font-family: Arial, sans-serif;
@@ -105,6 +106,34 @@
 
 /*-----------------------------------------------------------------------*/
 
+/*clase que define el contendor DIV que se crea cuadno pulsas un boton del menu y contine la imagen de la hoja callendo*/
+	.leaf {
+		position: absolute;
+		width: 50px; /* Ajusta el tamaño según tu imagen */
+		height: 50px; /* Ajusta el tamaño según tu imagen */
+		background-image: url('../ImagenesFondos/HojaSuelta/HojaSuelta.png');
+		background-size: contain; /* Asegura que la imagen completa quepa dentro del contenedor */
+		background-repeat: no-repeat; /* Evita que la imagen se repita */
+		animation: fall linear;
+		animation-iteration-count: 1; /* Ejecutar la animación solo una vez */
+	}
+
+	@keyframes fall {
+		0% {
+			top: 0;
+			transform: rotate(0deg);
+		}
+		100% {
+			top: 100vh; /* Hacer que caigan hasta la base de la ventana */
+			transform: rotate(360deg);
+		}
+	}
+
+
+
+
+/*-----------------------------------------------------------------------*/
+
 	/*clase contenedor para formatear un DIV SIN FOTO DE FONDO y con varias secciones */
 		.containerDivnormal {
 			display: flex;
@@ -163,6 +192,11 @@
 		}
 
 /*-----------------------------------------------------------------------*/
+/* Esta clase es referenciada por el codigo JS para hacer la transicion más suave de imanges */
+	#dynamicBgDiv {
+		transition: background-image 2s ease-in-out; /* Transición suave de 1 segundo */
+	}
+
 		
 		/*clase contenedor para FORMATEAR UN  DIV CON UN FONDO DE FOTO Y VARIAS SECCIONES*/
 		.containerDiv {
