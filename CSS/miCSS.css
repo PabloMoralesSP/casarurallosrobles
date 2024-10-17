@@ -192,10 +192,10 @@
 		}
 
 /*-----------------------------------------------------------------------*/
-/* Esta clase es referenciada por el codigo JS para hacer la transicion más suave de imanges */
-	#dynamicBgDiv {
-		transition: background-image 2s ease-in-out; /* Transición suave de 1 segundo */
-	}
+		/* Esta clase es referenciada por el codigo JS para hacer la transicion más suave de imanges */
+		#dynamicBgDiv {
+			transition: background-image 2s ease-in-out; /* Transición suave de 1 segundo */
+		}
 
 		
 		/*clase contenedor para FORMATEAR UN  DIV CON UN FONDO DE FOTO Y VARIAS SECCIONES*/
