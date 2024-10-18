@@ -150,13 +150,13 @@
 		.containerDivnormal .section2 {
 		  color: Black; /* Cambiar el color del texto a blanco */
 		  flex-basis: calc((100%/3) - 10px); /* Ajusta el ancho de cada sección */
-		  padding-left: 55px; /* Introduce una sangría de 20px en todo el parrafo*/
+		  padding-left: 35px; /* Introduce una sangría de 20px en todo el parrafo*/
 		}
 
 		.containerDivnormal .section3 {
 		  color: Black; /* Cambiar el color del texto a blanco */
 		  flex-basis: calc((100%/4) - 10px); /* Ajusta el ancho de cada sección */
-		  padding-left: 55px; /* Introduce una sangría de 20px en todo el parrafo*/
+		  padding-left: 35px; /* Introduce una sangría de 20px en todo el parrafo*/
 		}
 		.containerDivnormal .section4 {
 		  color: Black; /* Cambiar el color del texto a blanco */
