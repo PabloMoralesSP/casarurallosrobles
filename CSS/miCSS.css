@@ -528,7 +528,7 @@
 		  border-radius: 4px;
 		  font-size: 14px;
 		  max-width: 570px; /* Set a fixed width for all input fields (optional) */
-		  min-width: 100px;
+		  /* min-width: 100px; */
 		}
 
 		/* Adjust width for specific fields if needed  */
