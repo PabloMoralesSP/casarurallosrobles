@@ -419,6 +419,7 @@
 				display: flex;
 			  }
 		  
+			/* clases casita para aumentar las imagenes en moviles */
 			  .casita {
 				  
 			 transform-origin: center; /* Asegura que la imagen crezca desde el centro */
@@ -428,6 +429,9 @@
 
 				transform: translate(50%, 50%) scale(2.1); /* Ampliar la imagen desde el centro */
 			  }
+			  
+			  
+			  
 		}
 
 
@@ -524,6 +528,7 @@
 		  border-radius: 4px;
 		  font-size: 14px;
 		  max-width: 570px; /* Set a fixed width for all input fields (optional) */
+		  min-width: 100px;
 		}
 
 		/* Adjust width for specific fields if needed  */
@@ -549,7 +554,7 @@
 		  border-radius: 4px;
 		  font-size: 16px;
 		  cursor: pointer;
-		  max-width: 270px; 
+		  max-width: 250px; 
 		}
 
 		.section form button:hover {
