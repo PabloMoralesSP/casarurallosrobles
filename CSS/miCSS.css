@@ -157,7 +157,7 @@
 		.containerDivnormal .section3 {
 		  color: Black; /* Cambiar el color del texto a blanco */
 		  flex-basis: calc((100%/4) - 10px); /* Ajusta el ancho de cada sección */
-		  padding-left: 35px; /* Introduce una sangría de 20px en todo el parrafo*/
+		  padding-left: 15px; /* Introduce una sangría de 20px en todo el parrafo*/
 		}
 		
 		.containerDivnormal .section4 {
@@ -503,9 +503,9 @@
 		
 		   .containerForm .section{
 			flex:1;
-            margin-bottom: 20px;
+            margin-bottom: 0px;
 			min-width: 270px; /* Asegura que las secciones no se vuelvan demasiado estrechas */
-			padding: 10px 20px; /* Añadir relleno */
+			padding: 10px 0px; /* Añadir relleno */
         }
 		
 		/* Add styling to the form container */
