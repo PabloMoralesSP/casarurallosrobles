@@ -411,10 +411,9 @@
         }
 		
 		.navigation-wrapper {
-		  position: flex; /* Position the item absolutely */
-		  left: 80%; /* Center horizontally */
-		  transform: translateX(-50%); /* Adjust for centering */
-		  /* z-index: 100;*/
+			flex: 1;
+			display: flex;
+			justify-content: center; /* ** Centra el menú horizontalmente ** */
 		}
 		
         .navigation-wrapper nav ul {
@@ -648,6 +647,7 @@
 		/* Adjust width for specific fields if needed  */
 		.section form input#name,
 		.section form input#email,
+		.section form input#phone,
 		.section form input#arrival,
 		.section form input#departure {
 		  max-width: 270px; /* Set a fixed width for all input fields (optional) */
