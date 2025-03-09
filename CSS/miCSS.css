@@ -210,7 +210,7 @@
 			flex-wrap: wrap; /* Permite que los elementos se envuelvan en una nueva línea */
 			position: relative;
 			overflow: hidden;
-			min-height: 150px; /* Ajusta la altura según necesites */
+			min-height: 250px; /* Ajusta la altura según necesites */
 			background-size: cover; /* Cover the container with the image */
 			background-position: center;
 		}
