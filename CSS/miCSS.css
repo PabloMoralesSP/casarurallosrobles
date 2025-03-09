@@ -58,6 +58,20 @@
 			min-width: 270px; /* Asegura que las secciones no se vuelvan demasiado estrechas */
 			padding: 10px 20px; /* Añadir relleno */
         }
+		.section2-padding-right {
+			flex:1;
+            margin-bottom: 10px;
+			min-width: 270px; /* Asegura que las secciones no se vuelvan demasiado estrechas */
+			padding: 10px 20px; /* Añadir relleno */
+			padding-right: 80px;
+        }
+		.section2-padding-left {
+			flex:1;
+            margin-bottom: 10px;
+			min-width: 270px; /* Asegura que las secciones no se vuelvan demasiado estrechas */
+			padding: 10px 20px; /* Añadir relleno */
+			padding-left: 80px;
+        }
 		
 		.casita {
 		  width: 150px;
