@@ -910,36 +910,29 @@
 		}		
 
 
+		.lightbox .close, .lightbox .prev, .lightbox .next {
+			position: absolute;
+			top: 50%;
+			color: white;
+			font-size: 2rem;
+			cursor: pointer;
+			user-select: none;
+			transform: translateY(-50%);
+		}
 
-.lightbox .close, .lightbox .prev, .lightbox .next {
-    position: absolute;
-    top: 50%;
-    color: white;
-    font-size: 2rem;
-    cursor: pointer;
-    user-select: none;
-    transform: translateY(-50%);
-}
+		.lightbox .close {
+			top: 20px;
+			right: 20px;
+			font-size: 3rem;
+		}
 
-.lightbox .close {
-    top: 20px;
-    right: 20px;
-    font-size: 3rem;
-}
+		.lightbox .prev {
+			left: 10px;
+		}
 
-.lightbox .prev {
-    left: 10px;
-}
-
-.lightbox .next {
-    right: 10px;
-}
-
-
-
-
-
-
+		.lightbox .next {
+			right: 10px;
+		}
 
 
 
@@ -965,3 +958,39 @@
 	#scrollTopBtn:hover {
 	  background-color: #555;
 }
+
+
+/*-----------------------------------------------------------------------*/
+/* Estilos especificos en Pagina de Inicio - Estilos carousel pagina de incio y lista doble*/
+	.carousel img {
+		
+		height: 50%;
+		width: 50%; /* Ocupar el 70% de la anchura de la pantalla */
+
+
+	}
+	.lista-doble {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.lista-doble ul {
+		list-style: none;
+		padding: 0;
+		width: 48%; /* Ajusta el ancho para que quepan dos columnas */
+	}
+
+	.lista-doble li {
+		margin-bottom: 5px; /* Espacio entre los elementos de la lista */
+	}
+
+	.boton-centrado {
+	  text-align: center; /* Centra el contenido horizontalmente */
+	  margin-top: 20px; /* Añade un margen para separar el botón de la lista */
+	}
+
+    .boton-centrado img {
+       margin-right: 10px; /* Espacio entre el ícono y el texto */
+       width: 20px; /* Ancho del ícono */
+       height: 20px; /* Alto del ícono */
+    }

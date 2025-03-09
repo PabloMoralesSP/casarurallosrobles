@@ -1,3 +1,4 @@
+
 //CODIGO JAVA SCRIPT ANIMACIÓN CAIDA DE HOJAS AL PULSAR UN BOTON DEL MENU
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -35,6 +36,15 @@ document.addEventListener('DOMContentLoaded', () => {
             sessionStorage.removeItem('leafButtonPosition');
         });
     }
+	
+	
+	// CODIGO JAVA SCRIPT PARA EL CARRUSEL DE IMAGENES (TIENE QUE IR DENTRO DE ESTE DOMContentLoaded
+    $('.carousel').slick({
+        dots: true,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 6000 // Cambia aquí: 6000 milisegundos = 6 segundos
+    });
 });
 
 
@@ -162,4 +172,16 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
   form.addEventListener("submit", handleSubmit);
+});
+
+
+
+//CODIGO JAVA SCRIPT PARA CAROUSEL DE LA PAGINA DE INICIO
+$(document).ready(function(){
+    $('.carousel').slick({
+        dots: true,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 3000
+    });
 });
