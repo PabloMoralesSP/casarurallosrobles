@@ -988,6 +988,19 @@
 
 /*-----------------------------------------------------------------------*/
 /* Estilos especificos en Pagina de Inicio - Estilos carousel pagina de incio y lista doble*/
+
+	.containercarousel {
+	  width: 513px;
+	  height: 400px;
+	  max-width: 1700px;
+	  margin: 5% auto;
+	  padding: 20px;
+	  background-color: #fff;
+	  border-radius: 10px;
+	  overflow: hidden;
+	  box-sizing: border-box;
+	  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+	}
 	.carousel img {
 		
 		height: 50%;
