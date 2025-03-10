@@ -343,68 +343,68 @@
 
 
 	/* Estilos de los DIV de la seccion de ofertas */
-	.offer-section {
-		display: flex;
-		justify-content: space-around;
-		align-items: center;
-		height: 40vh;
-	}
-
-
-	.offer {
-		width: 250px;
-		padding: 20px;
-		border-radius: 10px;
-		text-align: center;
-		color: white;
-	}
-
-	.offer h2 {
-		margin: 0;
-	}
-
-	.offer p {
-		margin: 10px 0;
-	}
-
-	.offer .price {
-		font-size: 1.6em;
-		font-weight: bold;
-	}
-
-	.offer .details {
-		color: #333;
-		background-color: white;
-		padding: 10px;
-		border-radius: 10px;
-	}
-
-	/* Colores específicos para cada oferta */
-	.green {
-		background-color: #00b050;
-	}
-
-	.purple {
-		background-color: #c000c0;
-	}
-
-	.blue {
-		background-color: #4f81bd;
-	}
-
-	/* Media query para pantallas pequeñas */
-	@media (max-width: 768px) { /* Ajusta el ancho según necesites */
 		.offer-section {
-			flex-direction: column; /* Alinea los elementos verticalmente */
-			height: auto; /* Ajusta la altura automáticamente */
-			align-items: stretch; /* Estira los elementos para llenar el ancho */
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			height: 40vh;
 		}
+
 
 		.offer {
-			width: 100%; /* Los elementos ocupan todo el ancho */
-			margin-bottom: 20px; /* Espacio entre los elementos */
+			width: 250px;
+			padding: 20px;
+			border-radius: 10px;
+			text-align: center;
+			color: white;
 		}
-	}
+
+		.offer h2 {
+			margin: 0;
+		}
+
+		.offer p {
+			margin: 10px 0;
+		}
+
+		.offer .price {
+			font-size: 1.6em;
+			font-weight: bold;
+		}
+
+		.offer .details {
+			color: #333;
+			background-color: white;
+			padding: 10px;
+			border-radius: 10px;
+		}
+
+		/* Colores específicos para cada oferta */
+		.green {
+			background-color: #00b050;
+		}
+
+		.purple {
+			background-color: #c000c0;
+		}
+
+		.blue {
+			background-color: #4f81bd;
+		}
+
+		/* Estilo DIV ofertas (pantallas pequeñas)*/
+		@media (max-width: 768px) { /* Ajusta el ancho según necesites */
+			.offer-section {
+				flex-direction: column; /* Alinea los elementos verticalmente */
+				height: auto; /* Ajusta la altura automáticamente */
+				align-items: stretch; /* Estira los elementos para llenar el ancho */
+			}
+
+			.offer {
+				width: 100%; /* Los elementos ocupan todo el ancho */
+				margin-bottom: 20px; /* Espacio entre los elementos */
+			}
+		}
 
 		
 /*-----------------------------------------------------------------------*/
@@ -1033,3 +1033,19 @@
        width: 20px; /* Ancho del ícono */
        height: 20px; /* Alto del ícono */
     }
+	
+	/* Estilos para el Contenedor Carusel(pantallas pequeñas) */
+	@media (max-width: 768px) { /* Ajusta el ancho según necesites */
+		.section2-padding-right {
+			flex:1;
+            margin-bottom: 10px;
+			min-width: 270px; /* Asegura que las secciones no se vuelvan demasiado estrechas */
+			padding: 10px 20px; /* Añadir relleno */
+        }
+		.section2-padding-left {
+			flex:1;
+            margin-bottom: 10px;
+			min-width: 270px; /* Asegura que las secciones no se vuelvan demasiado estrechas */
+			padding: 10px 20px; /* Añadir relleno */
+        }
+	}
