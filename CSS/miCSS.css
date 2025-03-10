@@ -101,7 +101,7 @@
 		}
 		
 		
-		.section a, .section1 a, .section2 a, .section3 a, .section4 a, .section2-padding-right a{
+		.section a, .section1 a, .section2 a, .section3 a, .section4 a, .section2-padding-right a, .section2-padding-left a{
 		  /* Eliminar estilos por defecto de enlaces */
 		  display: inline-block; /* Convertir el enlace en un bloque en línea */
 		  padding: 10px 20px; /* Añadir relleno */
@@ -114,7 +114,7 @@
 		  transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
 		}
 
-		.section a:hover, .section1 a:hover, .section2 a:hover, .section3 a:hover, .section4 a:hover, .section2-padding-right a:hover {
+		.section a:hover, .section1 a:hover, .section2 a:hover, .section3 a:hover, .section4 a:hover, .section2-padding-right a:hover, .section2-padding-left a:hover {
 		  background-color: #3e8e41; /* Color de fondo verde más oscuro al pasar el ratón */
 		}
 
