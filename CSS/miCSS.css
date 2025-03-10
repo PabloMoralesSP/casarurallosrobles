@@ -125,7 +125,7 @@
 		position: absolute;
 		width: 50px; /* Ajusta el tamaño según tu imagen */
 		height: 50px; /* Ajusta el tamaño según tu imagen */
-		background-image: url('../ImagenesFondos/HojaSuelta/HojaSuelta.png');
+		background-image: url('../ImagenesGaleria/HojaSuelta/HojaSuelta.png');
 		background-size: contain; /* Asegura que la imagen completa quepa dentro del contenedor */
 		background-repeat: no-repeat; /* Evita que la imagen se repita */
 		animation: fall linear;
