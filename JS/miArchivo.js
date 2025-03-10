@@ -57,7 +57,7 @@ function redirectToContact() {
   var departure = document.getElementById('departureInput').value;
 
   // Redirigir a la página de contacto con los parámetros en la URL
-  window.location.href = 'contacto.html?email=' + encodeURIComponent(email) +
+  window.location.href = '../contacto.html?email=' + encodeURIComponent(email) +
     '&arrival=' + encodeURIComponent(arrival) +
     '&departure=' + encodeURIComponent(departure);
 }
