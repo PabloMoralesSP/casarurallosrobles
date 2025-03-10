@@ -1023,6 +1023,16 @@
 		margin-bottom: 5px; /* Espacio entre los elementos de la lista */
 	}
 
+	.boton-izquierda {
+	  text-align: left; /* Centra el contenido horizontalmente */
+	  margin-top: 20px; /* Añade un margen para separar el botón de la lista */
+	}
+
+    .boton-izquierda img {
+       margin-right: 10px; /* Espacio entre el ícono y el texto */
+       width: 20px; /* Ancho del ícono */
+       height: 20px; /* Alto del ícono */
+    }
 	.boton-centrado {
 	  text-align: center; /* Centra el contenido horizontalmente */
 	  margin-top: 20px; /* Añade un margen para separar el botón de la lista */
