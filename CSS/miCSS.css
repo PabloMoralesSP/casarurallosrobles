@@ -1048,9 +1048,31 @@
 	@media (max-width: 1350px) { /* Ajusta el ancho según necesites */
 		.section2-padding-right {
 			padding: 10px 10px; /* Añadir relleno */
+			padding-left: 35px; /* Añadir relleno */
+
         }
+		
 		.section2-padding-left {
 			
 			padding: 10px 10px; /* Añadir relleno */
+			padding-left: 35px; /* Añadir relleno */
         } 
+	}
+		@media (max-width: 700px) { /* Ajusta el ancho según necesites */
+		.section2-padding-right {
+			padding: 10px 10px; /* Añadir relleno */
+			padding-left: 35px; /* Añadir relleno */
+
+        }
+		
+		.section2-padding-left {
+			
+			padding: 10px 10px; /* Añadir relleno */
+			padding-left: 35px; /* Añadir relleno */
+        } 
+		.boton-centrado {
+			text-align: left; /* Centra el contenido horizontalmente */
+			margin-top: 20px; /* Añade un margen para separar el botón de la lista */
+			margin-left: 20px;
+		}
 	}
