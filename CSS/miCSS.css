@@ -1049,13 +1049,13 @@
 		.section2-padding-right {
 			flex:1;
             margin-bottom: 10px;
-			min-width: 270px; /* Asegura que las secciones no se vuelvan demasiado estrechas */
+			min-width: 250px; /* Asegura que las secciones no se vuelvan demasiado estrechas */
 			padding: 0px 0px; /* Añadir relleno */
         }
 		.section2-padding-left {
 			flex:1;
             margin-bottom: 10px;
-			min-width: 270px; /* Asegura que las secciones no se vuelvan demasiado estrechas */
+			min-width: 250px; /* Asegura que las secciones no se vuelvan demasiado estrechas */
 			padding: 0px 0px; /* Añadir relleno */
         }
 	}
