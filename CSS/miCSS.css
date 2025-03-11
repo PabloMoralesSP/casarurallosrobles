@@ -124,29 +124,29 @@
 /*-----------------------------------------------------------------------*/
 
 /*clase que define el contendor DIV que se crea cuadno pulsas un boton del menu y contine la imagen de la hoja callendo*/
-	.leaf {
-		position: absolute;
-		width: 50px; /* Ajusta el tamaño según tu imagen */
-		height: 50px; /* Ajusta el tamaño según tu imagen */
-		background-image: url('../ImagenesGaleria/HojaSuelta/HojaSuelta.png');
-		background-size: contain; /* Asegura que la imagen completa quepa dentro del contenedor */
-		background-repeat: no-repeat; /* Evita que la imagen se repita */
-		animation: fall linear;
-		animation-iteration-count: 1; /* Ejecutar la animación solo una vez */
-				  z-index: 60; /* Establece un índice z inicial */
+		.leaf {
+			position: absolute;
+			width: 50px; /* Ajusta el tamaño según tu imagen */
+			height: 50px; /* Ajusta el tamaño según tu imagen */
+			background-image: url('../ImagenesGaleria/HojaSuelta/HojaSuelta.png');
+			background-size: contain; /* Asegura que la imagen completa quepa dentro del contenedor */
+			background-repeat: no-repeat; /* Evita que la imagen se repita */
+			animation: fall linear;
+			animation-iteration-count: 1; /* Ejecutar la animación solo una vez */
+					  z-index: 60; /* Establece un índice z inicial */
 
-	}
+		}
 
-	@keyframes fall {
-		0% {
-			top: 0;
-			transform: rotate(0deg);
+		@keyframes fall {
+			0% {
+				top: 0;
+				transform: rotate(0deg);
+			}
+			100% {
+				top: 100vh; /* Hacer que caigan hasta la base de la ventana */
+				transform: rotate(360deg);
+			}
 		}
-		100% {
-			top: 100vh; /* Hacer que caigan hasta la base de la ventana */
-			transform: rotate(360deg);
-		}
-	}
 
 
 
@@ -293,7 +293,7 @@
 			display: flex;
 			justify-content: space-around;
 			align-items: center;
-		--borrar-	height: 40vh;
+			height: 40vh;
 		}
 
 
@@ -918,99 +918,99 @@
 /*-----------------------------------------------------------------------*/
 
 /* estolos para el botón subir al inicio de pantalla */
-	#scrollTopBtn {
-	  display: none; /* Oculto por defecto */
-	  position: fixed;
-	  bottom: 20px;
-	  right: 20px;
-	  z-index: 99;
-	  font-size: 18px;
-	  border: none;
-	  outline: none;
-	  background-color: #333;
-	  color: white;
-	  cursor: pointer;
-	  padding: 15px;
-	  border-radius: 4px;
-	}
+		#scrollTopBtn {
+		  display: none; /* Oculto por defecto */
+		  position: fixed;
+		  bottom: 20px;
+		  right: 20px;
+		  z-index: 99;
+		  font-size: 18px;
+		  border: none;
+		  outline: none;
+		  background-color: #333;
+		  color: white;
+		  cursor: pointer;
+		  padding: 15px;
+		  border-radius: 4px;
+		}
 
-	#scrollTopBtn:hover {
-	  background-color: #555;
-}
+		#scrollTopBtn:hover {
+		  background-color: #555;
+		}
 
 
 /*-----------------------------------------------------------------------*/
 /* Estilos especificos en Pagina de Inicio - Estilos carousel pagina de incio y lista doble*/
 
-	.containercarousel {
-	  width: 513px;
-	  height: 400px;
-	  max-width: 1700px;
-	  margin: 5% auto;
-	  padding: 20px;
-	  background-color: #fff;
-	  border-radius: 10px;
-	  overflow: hidden;
-	  box-sizing: border-box;
-	  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
-	}
-	.carousel img {
-		
-		height: 50%;
-		width: 50%; /* Ocupar el 70% de la anchura de la pantalla */
+		.containercarousel {
+		  width: 513px;
+		  height: 400px;
+		  max-width: 1700px;
+		  margin: 5% auto;
+		  padding: 20px;
+		  background-color: #fff;
+		  border-radius: 10px;
+		  overflow: hidden;
+		  box-sizing: border-box;
+		  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+		}
+		.carousel img {
+			
+			height: 50%;
+			width: 50%; /* Ocupar el 70% de la anchura de la pantalla */
 
 
-	}
-	.lista-doble {
-		display: flex;
-		justify-content: space-between;
-	}
+		}
+		.lista-doble {
+			display: flex;
+			justify-content: space-between;
+		}
 
-	.lista-doble ul {
-		list-style: none;
-		padding: 0;
-		width: 48%; /* Ajusta el ancho para que quepan dos columnas */
-	}
+		.lista-doble ul {
+			list-style: none;
+			padding: 0;
+			width: 48%; /* Ajusta el ancho para que quepan dos columnas */
+		}
 
-	.lista-doble li {
-		margin-bottom: 5px; /* Espacio entre los elementos de la lista */
-	}
+		.lista-doble li {
+			margin-bottom: 5px; /* Espacio entre los elementos de la lista */
+		}
 
-	.boton-izquierda {
-	  text-align: left; /* Centra el contenido horizontalmente */
-	  margin-top: 20px; /* Añade un margen para separar el botón de la lista */
-	}
+		.boton-izquierda {
+		  text-align: left; /* Centra el contenido horizontalmente */
+		  margin-top: 20px; /* Añade un margen para separar el botón de la lista */
+		}
 
-    .boton-izquierda img {
-       margin-right: 10px; /* Espacio entre el ícono y el texto */
-       width: 20px; /* Ancho del ícono */
-       height: 20px; /* Alto del ícono */
-    }
-	.boton-centrado {
-	  text-align: center; /* Centra el contenido horizontalmente */
-	  margin-top: 20px; /* Añade un margen para separar el botón de la lista */
-	}
+		.boton-izquierda img {
+		   margin-right: 10px; /* Espacio entre el ícono y el texto */
+		   width: 20px; /* Ancho del ícono */
+		   height: 20px; /* Alto del ícono */
+		}
+		.boton-centrado {
+		  text-align: center; /* Centra el contenido horizontalmente */
+		  margin-top: 20px; /* Añade un margen para separar el botón de la lista */
+		}
 
-    .boton-centrado img {
-       margin-right: 10px; /* Espacio entre el ícono y el texto */
-       width: 20px; /* Ancho del ícono */
-       height: 20px; /* Alto del ícono */
-    }
+		.boton-centrado img {
+		   margin-right: 10px; /* Espacio entre el ícono y el texto */
+		   width: 20px; /* Ancho del ícono */
+		   height: 20px; /* Alto del ícono */
+		}
 	
 	/* Estilos para el Contenedor Carusel(pantallas pequeñas) */
-	@media (max-width: 1350px) { /* Ajusta el ancho según necesites */
-		.section2-padding-right {
-			padding: 10px 10px; /* Añadir relleno */
-			padding-left: 35px; /* Añadir relleno */
+		@media (max-width: 1350px) { /* Ajusta el ancho según necesites */
+			.section2-padding-right {
+				padding: 10px 10px; /* Añadir relleno */
+				padding-left: 35px; /* Añadir relleno */
 
-        }
-		
-		.section2-padding-left {
+			}
 			
-			padding: 10px 10px; /* Añadir relleno */
-			padding-left: 35px; /* Añadir relleno */
-        } 
-	}
+			.section2-padding-left {
+				
+				padding: 10px 10px; /* Añadir relleno */
+				padding-left: 35px; /* Añadir relleno */
+			} 
+		}
 		@media (max-width: 700px) { /* Ajusta el ancho según necesites */
 		.section2-padding-right {
 			padding: 10px 10px; /* Añadir relleno */
