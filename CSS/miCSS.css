@@ -1045,12 +1045,12 @@
     }
 	
 	/* Estilos para el Contenedor Carusel(pantallas pequeñas) */
-	@media (max-width: 1300px) { /* Ajusta el ancho según necesites */
+	@media (max-width: 1350px) { /* Ajusta el ancho según necesites */
 		.section2-padding-right {
-			padding: 0px 10px; /* Añadir relleno */
+			padding: 10px 10px; /* Añadir relleno */
         }
 		.section2-padding-left {
 			
-			padding: 0px 10px; /* Añadir relleno */
+			padding: 10px 10px; /* Añadir relleno */
         } 
 	}
