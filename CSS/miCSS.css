@@ -1050,12 +1050,12 @@
 			flex:1;
             margin-bottom: 10px;
 			min-width: 270px; /* Asegura que las secciones no se vuelvan demasiado estrechas */
-			padding: 10px 20px; /* Añadir relleno */
+			padding: 0px 0px; /* Añadir relleno */
         }
 		.section2-padding-left {
 			flex:1;
             margin-bottom: 10px;
 			min-width: 270px; /* Asegura que las secciones no se vuelvan demasiado estrechas */
-			padding: 10px 20px; /* Añadir relleno */
+			padding: 0px 0px; /* Añadir relleno */
         }
 	}
