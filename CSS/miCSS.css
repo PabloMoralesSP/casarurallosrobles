@@ -284,65 +284,7 @@
 
 /*-----------------------------------------------------------------------*/
 
-/* Estilos para los DIVs de la tabla de tarifas */
-
-		/* Estilo del contenedor de precios */
-		.containerprice-wrapper {
-		  display: flex;
-		  justify-content: center; /* Centra el contenedor horizontalmente */
-		  margin: 30px 0; /* Margen superior e inferior */
-		}
-
-
-		.containerprice {
-		  display: flex; /* Convertir el div en un contenedor Flexbox */
-		  flex-direction: column; /* Alinear el contenido en columna */
-		  align-items: center; /* Alinear verticalmente al centro */
-		  justify-content: center; /* Alinear horizontalmente al centro */
-		  width: 70%; /* Ocupar el 70% de la anchura de la pantalla */
-		  padding: 20px;
-		  background-color: #fff;
-		  border-radius: 10px;
-		  overflow: hidden;
-		  box-sizing: border-box;
-		  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
-		  color: #208352;
-		 /* margin-top: 20px;  */
-		  margin-bottom: 30px;
-		}
-		
-		.containerprice h3 {
-			font-family: Arial, sans-serif;
-			/* font-size: 18px; */
-			font-weight: 300;
-			color: #28A466; /* Cambia el color del texto a blanco */
-			text-align: left;
-			margin: 0px 0;
-			font-weight: bold; /* Hace el texto más grueso */
-		}
-		
-
-		/* Estilo adicional para la tabla */
-		.containerprice table {
-		  width: 100%; /* Asegura que la tabla ocupe el 100% del contenedor */
-		  border-collapse: collapse; /* Elimina el espacio entre las celdas */
-		  margin: auto;
-		}
-
-		.containerprice th, .containerprice td {
-		  border: 1px solid #208352; /* Borde fino en verde */
-		  padding: 10px;
-		  text-align: center; /* Alinea al centro el contenido de las celdas */
-		}
-
-		.containerprice td:first-child {
-		  text-align: right; /* Alinea a la derecha el contenido de la primera columna */
-		}
-
-
-
-
-	/* Estilos de los DIV de la seccion de ofertas */
+/* Estilos de los DIV de la seccion de ofertas */
 		.offer-section {
 			display: flex;
 			justify-content: space-around;
@@ -390,6 +332,11 @@
 
 		.blue {
 			background-color: #4f81bd;
+		}
+		.yellow {
+			background-color: #FFBF00;
+					  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+
 		}
 
 		/* Estilo DIV ofertas (pantallas pequeñas)*/
