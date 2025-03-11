@@ -61,14 +61,14 @@
 		.section2-padding-right {
 			flex:1;
             margin-bottom: 10px;
-			min-width: 400px; /* Asegura que las secciones no se vuelvan demasiado estrechas */
+			min-width: 550px; /* Asegura que las secciones no se vuelvan demasiado estrechas */
 			padding: 10px 20px; /* Añadir relleno */
 			padding-right: 80px;
         }
 		.section2-padding-left {
 			flex:1;
             margin-bottom: 10px;
-			min-width: 400px; /* Asegura que las secciones no se vuelvan demasiado estrechas */
+			min-width: 550px; /* Asegura que las secciones no se vuelvan demasiado estrechas */
 			padding: 10px 20px; /* Añadir relleno */
 			padding-left: 80px;
         }
@@ -1045,19 +1045,12 @@
     }
 	
 	/* Estilos para el Contenedor Carusel(pantallas pequeñas) */
-	@media (max-width: 1100px) { /* Ajusta el ancho según necesites */
+	@media (max-width: 1300px) { /* Ajusta el ancho según necesites */
 		.section2-padding-right {
-			flex:1;
-			flex-direction: column; /* Alinea los elementos verticalmente */
-            margin-bottom: 10px;
-			min-width: 0px; /* Asegura que las secciones no se vuelvan demasiado estrechas */
-			padding: 0px 0px; /* Añadir relleno */
+			padding: 0px 10px; /* Añadir relleno */
         }
 		.section2-padding-left {
-			flex:1;
-			flex-direction: column; /* Alinea los elementos verticalmente */
-            margin-bottom: 10px;
-			min-width: 250px; /* Asegura que las secciones no se vuelvan demasiado estrechas */
-			padding: 0px 0px; /* Añadir relleno */
-        }
+			
+			padding: 0px 10px; /* Añadir relleno */
+        } 
 	}
