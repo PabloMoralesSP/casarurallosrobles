@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-// CODIGO PARA EL MENU REDUCIDO AL ENCOGER PANTALLA DEL NAVEGADOR
+// CODIGO PARA ESCONDER/APARECER EL MENU REDUCIDO AL ENCOGER PANTALLA DEL NAVEGADOR
 
 document.addEventListener('DOMContentLoaded', function() {
     const menuButton = document.getElementById('menuButton');
