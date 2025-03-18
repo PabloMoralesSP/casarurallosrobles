@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', function () {
         bgDiv.style.backgroundImage = backgroundImage;
     }
 
-    // Cambia el fondo cada 4 segundos
+    // Cambia el fondo cada 5 segundos
     setInterval(changeBackground, 5000);
 });
 
