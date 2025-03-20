@@ -58,7 +58,7 @@
 			min-width: 270px; /* Asegura que las secciones no se vuelvan demasiado estrechas */
 			padding: 10px 20px; /* Añadir relleno */
 								  
-  /*z-index: 1; /* Asegura que la imagen ampliada esté por encima de otros elementos */
+	/*z-index: 1; /* Asegura que la imagen ampliada esté por encima de otros elementos */
 
         }
 		.section2-padding-right {
@@ -104,7 +104,7 @@
 		}
 		
 		
-		.section a, .section1 a, .section2 a, .section3 a, .section4 a, .section2-padding-right a, .section2-padding-left a{
+		.section2-padding-right a, .section2-padding-left a{
 		  /* Eliminar estilos por defecto de enlaces */
 		  display: inline-block; /* Convertir el enlace en un bloque en línea */
 		  padding: 10px 20px; /* Añadir relleno */
@@ -116,11 +116,25 @@
 		  cursor: pointer; /* Cambiar cursor a mano al pasar el ratón */
 		  transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
 		}
+		
+		.section a, .section1 a, .section2 a, .section3 a, .section4 a{
+		  /* Eliminar estilos por defecto de enlaces */
+		  display: inline-block; /* Convertir el enlace en un bloque en línea */
+		  border: none; /* Eliminar borde */
+		  color: black; /* Color de texto blanco */
+		  text-decoration: none; /* Eliminar subrayado */
+		  cursor: pointer; /* Cambiar cursor a mano al pasar el ratón */
+		}
 
-		.section a:hover, .section1 a:hover, .section2 a:hover, .section3 a:hover, .section4 a:hover, .section2-padding-right a:hover, .section2-padding-left a:hover {
+		.section2-padding-right a:hover, .section2-padding-left a:hover {
 		  background-color: #3e8e41; /* Color de fondo verde más oscuro al pasar el ratón */
 		}
 
+		.section a:hover, .section1 a:hover, .section2 a:hover, .section3 a:hover, .section4 a:hover {
+		  text-decoration: initial; /* Add underline on hover */
+		   color: #3e8e41; 	   
+		}
+		
 /*-----------------------------------------------------------------------*/
 
 /*clase que define el contendor DIV que se crea cuadno pulsas un boton del menu y contine la imagen de la hoja callendo*/
