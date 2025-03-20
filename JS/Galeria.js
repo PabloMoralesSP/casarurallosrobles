@@ -16,7 +16,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function showLightbox(index) {
         currentIndex = index;
-        lightboxImg.src = images[currentIndex].src;
+        // Usar el atributo 'data-image-hd' para obtener la imagen en alta definición
+        lightboxImg.src = images[currentIndex].getAttribute('data-image-hd');
         lightboxCaption.textContent = images[currentIndex].alt;
         lightbox.style.display = 'block';
     }
